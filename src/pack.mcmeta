@@ -4,7 +4,7 @@
     "description": "ﾆﾎﾝｺﾞ―Japanese half-width kana (ja_jp@hwkana)"
   },
   "language": {
-    "ja_jp@hw": {
+    "ja_jp@hwkana": {
       "name": "ﾆﾎﾝｺﾞ",
       "region": "ﾆｯﾎﾟﾝ",
       "bidirectional": false
