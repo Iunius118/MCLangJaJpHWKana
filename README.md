@@ -2,6 +2,8 @@
 
 Minecraft language pack to add Japanese half-width kana (`ja_jp@hwkana`).
 
+`Minecraft ﾉ ｹﾞﾝｺﾞｾｯﾃｲﾆ ﾆﾎﾝｺﾞﾉ ﾊﾝｶｸｶﾅ (ja_jp@hwkana) ｦ ﾂｲｶｽﾙ ﾘｿｰｽﾊﾟｯｸﾃﾞｽ｡`
+
 ## Download
 
 - [Download latest](https://github.com/Iunius118/MCLangJaJpHWKana/releases/latest)
