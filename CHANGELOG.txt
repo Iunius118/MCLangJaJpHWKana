@@ -3,5 +3,7 @@
 [Source](https://github.com/Iunius118/MCLangJaJpHWKana).
 
 ## [Unreleased]
+
+## [1.17-20211124]
 ### Add
 - The first version.
