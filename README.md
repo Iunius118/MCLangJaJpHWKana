@@ -1,2 +1,7 @@
-# MCLangJaJpHWKana
- Minecraft language pack to add Japanese half-width kana (ja_jp@hwkana).
+# MC Lang ja_jp@hwkana
+
+Minecraft language pack to add Japanese half-width kana (`ja_jp@hwkana`).
+
+## License
+
+- Use within the scope of the [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula).
