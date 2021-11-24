@@ -6,7 +6,7 @@
 
 ## [1.17-20211124.1]
 ### Added
-- pack.png
+- pack.png.
 
 ### Fixed
 - Pack format to 7.
