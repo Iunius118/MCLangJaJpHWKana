@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+## [1.17-20211126.0]
+### Added
+- 1.12 version experimentally.
+
+### Fixed
+- Realms translation.
+
 ## [1.17-20211124.1]
 ### Added
 - pack.png.
