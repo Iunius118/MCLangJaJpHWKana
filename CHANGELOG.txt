@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [1.17-20211126.1]
+### Fixed
+- Translations of 1.17 and 1.12.
+
 ## [1.17-20211126.0]
 ### Added
 - 1.12 version experimentally.
