@@ -1,4 +1,4 @@
-# MC Lang ja_jp@hwkana
+# MC Lang ja_jp_hwkana
 
 Minecraft language pack to add Japanese [half-width kana](https://en.wikipedia.org/wiki/Half-width_kana "Half-width kana - Wikipedia").
 
@@ -6,7 +6,7 @@ Minecraft ﾉ ｹﾞﾝｺﾞｾｯﾃｲﾆ ﾊﾝｶｸｶﾅﾋｮｳｷﾉ �
 
 |  | Value |
 | --- | --- |
-| Language Code | `ja_jp@hwkana` |
+| Language Code | `ja_jp_hwkana` |
 | Language Name | `ﾆﾎﾝｺﾞ` |
 | Language Region | `ﾆｯﾎﾟﾝ` |
 

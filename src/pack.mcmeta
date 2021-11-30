@@ -1,10 +1,10 @@
 {
   "pack": {
     "pack_format": 7,
-    "description": "ﾆﾎﾝｺﾞ - Japanese half-width kana (ja_jp@hwkana)"
+    "description": "ﾆﾎﾝｺﾞ - Japanese half-width kana (ja_jp_hwkana)"
   },
   "language": {
-    "ja_jp@hwkana": {
+    "ja_jp_hwkana": {
       "name": "ﾆﾎﾝｺﾞ",
       "region": "ﾆｯﾎﾟﾝ",
       "bidirectional": false
