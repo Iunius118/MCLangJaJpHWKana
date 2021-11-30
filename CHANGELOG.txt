@@ -1,8 +1,15 @@
 # Change Log
-[MC Lang ja_jp@hwkana](https://github.com/Iunius118/MCLangJaJpHWKana).
+[MC Lang ja_jp_hwkana](https://github.com/Iunius118/MCLangJaJpHWKana).
 [Source](https://github.com/Iunius118/MCLangJaJpHWKana).
 
 ## [Unreleased]
+
+## [1.17-20211201.0]
+### Changed
+- Language code to `ja_jp_hwkana`.
+
+### Fixed
+- Translations of 1.17 and 1.12.
 
 ## [1.17-20211126.1]
 ### Fixed
