@@ -2185,7 +2185,7 @@
     "commands.effect.give.success.single": "%2$s ﾆ %1$s ﾉ ｺｳｶｦ ｱﾀｴﾏｼﾀ",
     "commands.enchant.failed": "ﾀｲｼｮｳﾊ ﾅﾆﾓ ﾓｯﾃｲﾅｲｶ､ｴﾝﾁｬﾝﾄｦ ﾃｷﾖｳﾃﾞｷﾅｲ ｼﾞｮｳﾀｲﾉ ﾀﾒ､ﾍﾝｺｳｻﾚﾏｾﾝﾃﾞｼﾀ",
     "commands.enchant.failed.entity": "%s ﾊ ﾕｳｺｳﾅ ｴﾝﾃｨﾃｨﾃﾞﾊ ｱﾘﾏｾﾝ",
-    "commands.enchant.failed.incompatible": "%s ﾆｿﾉｴﾝﾁｬﾝﾄﾊﾌﾖﾃﾞｷﾏｾﾝ",
+    "commands.enchant.failed.incompatible": "%s ﾆ ｿﾉ ｴﾝﾁｬﾝﾄﾊ ﾌﾖﾃﾞｷﾏｾﾝ",
     "commands.enchant.failed.itemless": "%s ﾊ ｱｲﾃﾑｦ ﾃﾆ ﾓｯﾃｲﾏｾﾝ",
     "commands.enchant.failed.level": "%s ﾊ ｿﾉ ｴﾝﾁｬﾝﾄﾃﾞ ﾀｲｵｳｼﾃｲﾙ ｻｲｺｳﾚﾍﾞﾙ %s ﾖﾘ ｵｵｷｲﾃﾞｽ",
     "commands.enchant.success.multiple": "%2$s ﾀｲﾉ ｴﾝﾃｨﾃｨﾆ %1$s ﾉ ｴﾝﾁｬﾝﾄｦ ﾃｷﾖｳｼﾏｼﾀ",
