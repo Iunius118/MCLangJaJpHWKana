@@ -1,8 +1,14 @@
 # MC Lang ja_jp@hwkana
 
-Minecraft language pack to add Japanese half-width kana (`ja_jp@hwkana`).
+Minecraft language pack to add Japanese half-width kana.
 
 Minecraft ﾉ ｹﾞﾝｺﾞｾｯﾃｲﾆ ﾊﾝｶｸｶﾅﾋｮｳｷﾉ ﾆﾎﾝｺﾞｦ ﾂｲｶｽﾙ ﾘｿｰｽﾊﾟｯｸﾃﾞｽ｡
+
+|  | Value |
+| --- | --- |
+| Language Code | `ja_jp@hwkana` |
+| Language Name | `ﾆﾎﾝｺﾞ` |
+| Language Region | `ﾆｯﾎﾟﾝ` |
 
 [<img src="docs/media/language_screen_1.17.png" title="The grid lines" width="427" height="240">](docs/media/language_screen_1.17.png)
 
@@ -14,4 +20,4 @@ Minecraft ﾉ ｹﾞﾝｺﾞｾｯﾃｲﾆ ﾊﾝｶｸｶﾅﾋｮｳｷﾉ �
 ## License
 
 - Use or fork within the scope of the [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula).  
-[｢Minecraft ｴﾝﾄﾞ ﾕｰｻﾞｰ ﾗｲｾﾝｽｼﾞｮｳｺｳ｣](https://account.mojang.com/documents/minecraft_eula) ﾉ ﾊﾝｲﾅｲﾃﾞ ｺﾞｼﾖｳ ｸﾀﾞｻｲ｡
+｢[Minecraft ｴﾝﾄﾞ ﾕｰｻﾞｰ ﾗｲｾﾝｽｼﾞｮｳｺｳ](https://account.mojang.com/documents/minecraft_eula)｣ ﾉ ﾊﾝｲﾅｲﾃﾞ ｺﾞｼﾖｳ ｸﾀﾞｻｲ｡
