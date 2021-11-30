@@ -1,6 +1,6 @@
 # MC Lang ja_jp@hwkana
 
-Minecraft language pack to add Japanese half-width kana.
+Minecraft language pack to add Japanese [half-width kana](https://en.wikipedia.org/wiki/Half-width_kana).
 
 Minecraft ﾉ ｹﾞﾝｺﾞｾｯﾃｲﾆ ﾊﾝｶｸｶﾅﾋｮｳｷﾉ ﾆﾎﾝｺﾞｦ ﾂｲｶｽﾙ ﾘｿｰｽﾊﾟｯｸﾃﾞｽ｡
 
