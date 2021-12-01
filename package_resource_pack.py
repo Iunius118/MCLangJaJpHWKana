@@ -7,9 +7,10 @@ import shutil
 def main():
     # Base name of pack
     base_file_name = 'lang_ja_jp_hwkana'
-    json_ver_mod = '-1.17-'
+    json_ver_mod = '-1.18-'
     lang_ver_mod = '-1.12-'
     # File type of lang file, True: .json, False: .lang
+    # * 1.12 is outdated
     is_json = True
 
     # Copy src/ to temp/
@@ -19,9 +20,10 @@ def main():
     if is_json:
         gen_json_ver('temp')
         package_resource('temp', base_file_name + json_ver_mod)
-    else:
-        gen_lang_ver('temp')
-        package_resource('temp', base_file_name + lang_ver_mod)
+    # else:
+        # Outdated!
+        # gen_lang_ver('temp')
+        # package_resource('temp', base_file_name + lang_ver_mod)
 
 def gen_json_ver(src_dir):
     # List .json files in src dir
