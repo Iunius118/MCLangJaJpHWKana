@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [1.18-20211211.0]
+### Fixed
+- Chat log format.
+
 ## [1.18-20211201.1]
 ### Changed
 - Update to 1.18.
