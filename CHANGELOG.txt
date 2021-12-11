@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+## [1.18-20211211.1]
+### Fixed
+- Update translations from 1.18.1.
+
+## [1.17-20211211.1]
+### Fixed
+- Fix translation of advancements.
+
 ## [1.18-20211211.0]
 ### Fixed
 - Chat log format.
