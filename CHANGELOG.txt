@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [1.18-20211218.0]
+### Fixed
+- Fix Translation of attribute modifiers.
+
 ## [1.18-20211211.1]
 ### Fixed
 - Update translations from 1.18.1.
