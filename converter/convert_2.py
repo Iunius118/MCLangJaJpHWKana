@@ -134,10 +134,12 @@ def fix_sentence(value):
     if value == 'ソラ':
         return 'カラ'
 
-    result = value.replace('s ヒト', 's ニン').replace('s ジン', 's ニン').replace('s カラダ', 's タイ').replace(' ：', '：').replace('：%', '： %').replace('：ヒ', '： ヒ').replace('s：', 's： ').replace('ID%', 'ID %').replace('チュウイ：', 'チュウイ： ').replace('ケイコク：', 'ケイコク： ').replace('← ', '<-').replace('…', '・・・').replace('  ', ' ')
+    result = value.replace('s ヒト', 's ニン').replace('s ジン', 's ニン').replace('s カラダ', 's タイ').replace(' ：', '：').replace('：%', '： %').replace('：ヒ', '： ヒ').replace('s：', 's： ').replace('ID%', 'ID %').replace('チュウイ：', 'チュウイ： ').replace('ケイコク：', 'ケイコク： ').replace('← ', '<-').replace('→', '->').replace('…', '・・・').replace('  ', ' ')
 
     if result == 'チュウイ： ':
         return 'チュウイ：'
+    if result == '↑ ↓':
+        return '↑↓'
 
     return result
 
