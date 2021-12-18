@@ -3,6 +3,8 @@
 [Source](https://github.com/Iunius118/MCLangJaJpHWKana).
 
 ## [Unreleased]
+
+## [1.18-20211218.1]
 ### Changed
 - Renew translations by new converter.
 
