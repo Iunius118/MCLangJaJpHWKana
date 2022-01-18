@@ -55,15 +55,17 @@ def needsSpace(prev_token, token):
     if prev_token is None or token is None:
         return False 
     '''
-    1. 前：記号を除く（読みあり）、今：名詞・記号（読みなし）→スペースを挟む
-    2. 前：名詞・記号（読みなし）、今：記号を除く（読みあり）→スペースを挟む
-    3. 前：記号,空白・句点・読点を除く、今：記号,括弧開→スペースを挟む
-    4. 前：記号,括弧閉、今：記号,空白を除く→スペースを挟む
-    5. 前：連体詞、今：記号,空白を除く→スペースを挟む
-    6. 前：記号,空白を除く、今：読み=クダサイ→スペースを挟む
-    7. 前：動詞と記号,空白を除く、今：動詞,（非自立と特定の動詞を除く）→スペースを挟む
-    8. 前：動詞、今：名詞,（非自立を除く）→スペースを挟む
-    9. 前：非自立語（記号を除く）、今：自立語（非自立と読みなしを除く）→スペースを挟む
+     1. 前：記号を除く（読みあり）、今：名詞・記号（読みなし）→スペースを挟む
+     2. 前：名詞・記号（読みなし）、今：記号を除く（読みあり）→スペースを挟む
+     3. 前：記号,空白・句点・読点を除く、今：記号,括弧開→スペースを挟む
+     4. 前：記号,括弧閉、今：記号,空白を除く→スペースを挟む
+     5. 前：連体詞、今：記号,空白を除く→スペースを挟む
+     6. 前：記号,空白を除く、今：読み=クダサイ→スペースを挟む
+     7. 前：動詞と記号,空白を除く、今：動詞,（非自立と特定の動詞を除く）→スペースを挟む
+     8. 前：動詞,形容詞、今：名詞,（非自立を除く）→スペースを挟む
+     8.1. 前：副詞、今：名詞→スペースを挟む
+     8.2. 前：形容詞,名詞（助数詞）、今：名詞（非自立と接尾を除く）→スペースを挟む
+     9. 前：非自立語（記号を除く）、今：自立語（非自立と読みなしを除く）→スペースを挟む
     10. 前：自立語（非自立を除く）、今：自立語（同品詞と非自立と読みなしを除く）→スペースを挟む
     ※自立語=名詞、動詞、形容詞、形容動詞、副詞、連体詞、接続詞、感動詞
     '''
@@ -71,7 +73,7 @@ def needsSpace(prev_token, token):
     jiritsu_tags_2 = ['名詞', '接頭詞', '動詞', '形容詞', '形容動詞', '副詞', '連体詞', '接続詞', '感動詞', '記号']
     no_spacing_doshi_1 = ['する', 'なる']
     no_spacing_doshi_2 = ['ある', 'いる']
-    no_spacing_joshi = ['が', 'に', 'の', 'は', 'も']
+    spacing_joshi = ['が', 'に', 'の', 'は', 'も']
     prev_pos = prev_token.part_of_speech.split(',')
     pos = token.part_of_speech.split(',')
     if prev_pos[1] == '空白' or prev_pos[1] == '括弧開' or prev_pos[1] == '句点' or prev_pos[1] == '読点' or prev_token.surface == '…' or pos[1] == '句点' or pos[1] == '読点':
@@ -97,17 +99,30 @@ def needsSpace(prev_token, token):
         dbg('Spacing: 6')
         return True
     elif prev_pos[0] != '動詞' and prev_pos[0] != '記号' and prev_pos[0] != '接頭詞' and isJiritsu(pos, ['動詞']):
-        flag = token.base_form not in no_spacing_doshi_1 and not (prev_pos[0] == '助詞' and prev_token.base_form in no_spacing_joshi and token.base_form in no_spacing_doshi_2)
-        if flag:
+        flag_no_spacing = token.base_form in no_spacing_doshi_1 or (token.base_form in no_spacing_doshi_2 and (prev_pos[0] == '助詞' and prev_token.base_form not in spacing_joshi))
+        if flag_no_spacing:
+            dbg('No spacing: 7')
+        else:
             dbg('Spacing: 7')
-        return flag
+        return not flag_no_spacing
     elif prev_pos[0] == '動詞' and isJiritsu(pos, ['名詞']):
         dbg('Spacing: 8')
         return True
+    elif prev_pos[0] == '副詞' and pos[0] == '名詞':
+        dbg('Spacing: 8.1')
+        return True
+    elif (prev_pos[0] == '形容詞' or prev_pos[2] == '助数詞') and pos[0] == '名詞':
+        no_spacing_2nd_tags = ['非自立', '接尾']
+        flag_no_spacing = pos[1] in no_spacing_2nd_tags
+        if flag_no_spacing:
+            dbg('No spacing: 8.2')
+        else:
+            dbg('Spacing: 8.2')
+        return not flag_no_spacing
     elif (not isJiritsu(prev_pos, jiritsu_tags_2) and prev_pos[1] != '非自立') and isJiritsu(pos, jiritsu_tags) and hasReading(token):
         dbg('Spacing: 9')
         return True
-    elif isJiritsu(prev_pos, jiritsu_tags) and ((prev_pos[0] != pos[0] and not (prev_pos[0] == '接頭詞' and (pos[0] == '名詞' or pos[0] == '動詞'))) or (prev_pos[0] == '副詞' or prev_pos[0] == '形容詞') and (pos[0] == '副詞' or pos[0] == '形容詞')) and isJiritsu(pos, jiritsu_tags) and hasReading(token):
+    elif isJiritsu(prev_pos, jiritsu_tags) and isJiritsu(pos, jiritsu_tags) and ((prev_pos[0] != pos[0] and not (prev_pos[0] == '接頭詞' and (pos[0] == '名詞' or pos[0] == '動詞'))) or (prev_pos[0] == '副詞' or prev_pos[0] == '形容詞') and (pos[0] == '副詞' or pos[0] == '形容詞')) and hasReading(token):
         dbg('Spacing: 10')
         return True
     else:
