@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+## [1.18-20220118.0]
+### Fixed
+- Fix converter for spacing of noun preceded by adverb or adjective.
+- Fix dictionary to add 金鉱石.
+
 ## [1.18-20211218.1]
 ### Changed
 - Renew translations by new converter.

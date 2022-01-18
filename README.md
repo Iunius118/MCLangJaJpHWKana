@@ -15,7 +15,7 @@ Minecraft ﾉ ｹﾞﾝｺﾞｾｯﾃｲﾆ ﾊﾝｶｸｶﾅﾋｮｳｷﾉ �
 ## Downloads
 
 - Latest version (ｻｲｼﾝﾊﾞﾝ)
-  - [lang_ja_jp_hwkana-1.18-20211218.1.zip](https://github.com/Iunius118/MCLangJaJpHWKana/releases/download/1.18-20211218.1/lang_ja_jp_hwkana-1.18-20211218.1.zip) (Minecraft 1.18.x)
+  - [lang_ja_jp_hwkana-1.18-20220118.0.zip](https://github.com/Iunius118/MCLangJaJpHWKana/releases/download/1.18-20220118.0/lang_ja_jp_hwkana-1.18-20220118.0.zip) (Minecraft 1.18.x)
 - Previous versions (ｲｾﾞﾝﾉ ﾊﾞｰｼﾞｮﾝ)
   - [lang_ja_jp_hwkana-1.17-20211218.0.zip](https://github.com/Iunius118/MCLangJaJpHWKana/releases/download/1.18-20211218.0/lang_ja_jp_hwkana-1.17-20211218.0.zip) (Minecraft 1.17.x)
   - [lang_ja_jp_hwkana-1.12-20211218.0.zip](https://github.com/Iunius118/MCLangJaJpHWKana/releases/download/1.18-20211218.0/lang_ja_jp_hwkana-1.12-20211218.0.zip) (Minecraft 1.12.x)
