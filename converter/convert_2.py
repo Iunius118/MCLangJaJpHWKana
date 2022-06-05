@@ -62,6 +62,7 @@ def needsSpace(prev_token, token):
      5. 前：連体詞、今：記号,空白を除く→スペースを挟む
      6. 前：記号,空白を除く、今：読み=クダサイ→スペースを挟む
      7. 前：動詞と記号,空白を除く、今：動詞,（非自立と特定の動詞を除く）→スペースを挟む
+     7.1. 前：形容詞（ガル接続）、今：動詞（がる）→スペースを挟まない
      8. 前：動詞,形容詞、今：名詞,（非自立を除く）→スペースを挟む
      8.1. 前：副詞、今：名詞→スペースを挟む
      8.2. 前：形容詞,名詞（助数詞）、今：名詞（非自立と接尾を除く）→スペースを挟む
@@ -102,6 +103,9 @@ def needsSpace(prev_token, token):
         flag_no_spacing = token.base_form in no_spacing_doshi_1 or (token.base_form in no_spacing_doshi_2 and (prev_pos[0] == '助詞' and prev_token.base_form not in spacing_joshi))
         if flag_no_spacing:
             dbg('No spacing: 7')
+        elif prev_pos[0] == '形容詞' and prev_token.infl_form == 'ガル接続' and token.base_form == 'がる':
+            dbg('No spacing: 7.1')
+            flag_no_spacing = True
         else:
             dbg('Spacing: 7')
         return not flag_no_spacing
