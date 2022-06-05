@@ -4,6 +4,15 @@
 
 ## [Unreleased]
 
+## [1.19-20220606.0]
+### Changed
+- Update to 1.19-rc2.
+
+### Fixed
+- In-game language code to `jpn_Kana_halfwidth`.
+- Update translations.
+- Spacing rule 4, 7.1, and post process.
+
 ## [1.18-20220118.0]
 ### Fixed
 - Fix converter for spacing of noun preceded by adverb or adjective.
