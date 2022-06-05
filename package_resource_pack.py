@@ -7,7 +7,7 @@ import shutil
 def main():
     # Base name of pack
     base_file_name = 'lang_ja_jp_hwkana'
-    json_ver_mod = '-1.18-'
+    json_ver_mod = '-1.19-'
     lang_ver_mod = '-1.12-'
     # File type of lang file, True: .json, False: .lang
     # * 1.12 is outdated
