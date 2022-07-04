@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [1.19-20220704.0]
+### Changed
+- Update to 1.19.1-pre2.
+
 ## [1.19-20220606.0]
 ### Changed
 - Update to 1.19-rc2.
