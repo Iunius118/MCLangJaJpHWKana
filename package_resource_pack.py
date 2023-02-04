@@ -7,10 +7,10 @@ import shutil
 def main():
     # Base name of pack
     base_file_name = 'lang_ja_jp_hwkana'
-    json_ver_mod = '-1.19-'
-    lang_ver_mod = '-1.12-'
+    json_ver_mod = '-1.19.3-'
     # File type of lang file, True: .json, False: .lang
     # * 1.12 is outdated
+    # lang_ver_mod = '-1.12-'
     is_json = True
 
     # Copy src/ to temp/
@@ -38,7 +38,7 @@ def gen_json_ver(src_dir):
         if len(data) > 0:
             # Escape Unicode characters and overwrite .json file
             with open(file_name, 'w', encoding='UTF-8') as f_json:
-                json.dump(data, f_json, ensure_ascii=True, indent=4)
+                json.dump(data, f_json, ensure_ascii=False, indent=4)
 
 def gen_lang_ver(src_dir):
     # Fix pack format version
